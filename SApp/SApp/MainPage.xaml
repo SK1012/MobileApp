@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SApp"
+             x:Class="SApp.MainPage">
+
+    
+    <StackLayout>
+        <Label Text="Please enter the percentages below:" FontSize="Small" TextColor="DarkBlue"></Label>
+        <Entry Placeholder="% of Men using app (0-100%)" Completed="OnEntryCompleted" TextChanged ="OnEntryTextChanged" Keyboard="Numeric" FontSize="Small"></Entry>
+        <Entry Placeholder="% of Men that answer No (0-100%)" Completed="OnEntryCompleted2" TextChanged ="OnEntryTextChanged2" Keyboard="Numeric" FontSize="Small"></Entry>
+        <Entry Placeholder="% of Women that answer No (0-100%)" Completed="OnEntryCompleted3" TextChanged ="OnEntryTextChanged3" Keyboard="Numeric" FontSize="Small"></Entry>
+        <Button HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Text="Compute" Clicked="Button_Clicked"></Button>
+        
+    </StackLayout>
+    
+    
+    
+</ContentPage>
